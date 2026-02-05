@@ -4,7 +4,7 @@ site_name: Handx Robot Docs
 # 站点描述, 用于 SEO 和主题中作为副标题或 meta 信息
 site_description: Starter template for a MkDocs docs site on GH Pages - including CI
 # 站点的线上访问地址, 用于生成绝对链接和 sitemap
-site_url: http://handxdocs.youngzhongque.top/
+site_url: https://handxdocs.youngzhongque.top
 
 # 仓库地址, 主题会在页面中显示“View on GitHub”之类的入口
 repo_url: https://github.com/zhaoninglei/zhaonilei.github.io
