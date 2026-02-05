@@ -1,23 +1,65 @@
 ### Site metadata ###
-
-site_name: MkDocs Quickstart
+# 站点名称, 显示在页面顶部与浏览器标签页中
+site_name: Handx Robot Docs
+# 站点描述, 用于 SEO 和主题中作为副标题或 meta 信息
 site_description: Starter template for a MkDocs docs site on GH Pages - including CI
+# 站点的线上访问地址, 用于生成绝对链接和 sitemap
 site_url: https://michaelcurrin.github.io/mkdocs-quickstart/
 
+# 仓库地址, 主题会在页面中显示“View on GitHub”之类的入口
 repo_url: https://github.com/MichaelCurrin/mkdocs-quickstart
-edit_uri: edit/master/docs/docs
+# 编辑链接路径, 用于生成“Edit this page”按钮
+# 含义: 在 GitHub 仓库的 main 分支下, docs/docs 目录中编辑当前页面
+edit_uri: edit/main/docs/docs
 
 ### Build settings ###
 
-theme: readthedocs
+# 使用的主题名称, readthedocs 是 MkDocs 内置主题之一
+theme:
+  name: material
+  language: zh   # 推荐使用 zh, 表示简体中文 UI
+  features:
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+    - content.code.annotate
+    - content.code.copy
+    - content.code.fold
+    - content.tabs.link
 
+# 文档导航结构定义
+# 左边是导航中显示的名称
+# 右边是对应的 Markdown 文件路径 (相对于 docs/docs 目录)
 nav:
-  - Home: index.md
-  - About MkDocs: about-mkdocs.md
+  # 首页, 通常是站点入口页面
+  - 首页: index.md
+
+  - 远游 1 号: 
+    - 快速开始: yuanyou1/start.md
+    - ROS 接口文档: yuanyou1/interface.md
+    - 快速调试: yuanyou1/try.md
+
+  - 远游 2 号: 
+    - 快速调试: yuanyou2/try1.md
+
+  - About-Project: 
+    - 如何在本地配置: About-This-Project/如何在本地配置.md
+    - Markdown 行文规范: About-This-Project/Markdown 行文规范.md
+
+  # 教程分组 (一级目录)
   - Tutorial:
+      # 快速概览页面
       - TL;DR: tutorial/tldr.md
+      # 安装说明
       - Installation: tutorial/installation.md
+      # 项目初始化与配置
       - Set up project: tutorial/setup-project.md
+      # 进阶用法
       - Advanced: tutorial/advanced.md
+      # 日常使用指南
       - Usage: tutorial/usage.md
+      # 部署到 GitHub Pages 的说明
       - Deploy: tutorial/deploy.md
+
+  # 关于 MkDocs 的说明页面
+  - About MkDocs: about-mkdocs.md
