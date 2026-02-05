@@ -7,7 +7,7 @@ site_description: Starter template for a MkDocs docs site on GH Pages - includin
 site_url: https://michaelcurrin.github.io/mkdocs-quickstart/
 
 # 仓库地址, 主题会在页面中显示“View on GitHub”之类的入口
-repo_url: https://github.com/MichaelCurrin/mkdocs-quickstart
+repo_url: https://github.com/zhaoninglei/zhaonilei.github.io
 # 编辑链接路径, 用于生成“Edit this page”按钮
 # 含义: 在 GitHub 仓库的 main 分支下, docs/docs 目录中编辑当前页面
 edit_uri: edit/main/docs/docs
